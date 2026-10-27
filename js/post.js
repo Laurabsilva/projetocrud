@@ -2,7 +2,7 @@ const form = document.querySelector("#form-livro");
 
 const resposta = document.querySelector("#resposta");
 
-const apiKey = "cv_JD7jMLqd0BU8QeATzKFqi0BjStGxnkxX5Na_VbQdjb8ZeD9xG0iCZn8vrkjahfrR";
+const apiKey = "cv_zse3i40KkcUCtVrNqQkaT7Ahn93j_9MqdG61v_1ck4owCeS07-MXKwrujaMn-oRc";
 
 const apiUrl = "https://api-ds.codeverse.dev.br/api/livros";
 
@@ -21,7 +21,7 @@ form.addEventListener("submit", async function (event) {
       imageUrl: dados.get("imageUrl") || null
   }
 
-  resposta.textContent = 'Enviando livro para a API....';
+  resposta.textContent = "Enviando livro para a API....";
 
 try {
 
@@ -54,5 +54,5 @@ try {
   console.error(error);
 }
 
-});
+})
 
